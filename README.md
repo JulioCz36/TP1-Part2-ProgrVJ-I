@@ -59,7 +59,7 @@ Estos paquetes fueron creados por **Mucho Pixels**, un estudio especializado en 
 ## ▶️ Cómo ejecutar
 1. Descargar la carpeta **"Instalador"**.
 2. Dentro encontrarás todos los archivos necesarios y un archivo ejecutable:  
-   **`TPProgrVJ-I.exe`**
+   **`TP1-Part2-ProgrVJ-I.exe`**
 3. Ejecutá el `.exe` directamente para jugar.
 
 > ⚠️ No borrar ni mover los archivos que acompañan al ejecutable. El juego depende de ellos para funcionar correctamente.

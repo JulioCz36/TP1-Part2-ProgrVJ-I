@@ -1,73 +1,89 @@
-# Trabajo Práctico Nº 1 - Parte 2 | Programación de Videojuegos I
+# Practical Work Nº 2 | Video Game Programming I
 
-## 🎮 Actividad
-
-Este proyecto fue desarrollado como parte del **Trabajo Práctico Nº 1** de la materia, con el objetivo de comenzar a crear videojuegos 2D.
+## 🎮 Activity
+This project is about creating a 2D platformer, implementing in code the concepts of stacks and queues learned in class.
 
 ## 🕹️ Gameplay
 
-[![Ver video del gameplay](https://img.youtube.com/vi/hfRFodu96G0/0.jpg)](https://www.youtube.com/watch?v=hfRFodu96G0)
+[![Ver video del gameplay](https://img.youtube.com/vi/468tXj5txqs/0.jpg)](https://youtu.be/468tXj5txqs)
 
 
-## 📝 Consigna
+## 📝 Objective
+Control a character that must climb platforms, avoid enemies, and reach the exit door before the time runs out.
 
-Crear un pequeño juego que permita que un personaje poder desplazarse por el escenario, saltar y golpear bloques de manera ordenada antes de que acabe el tiempo.
+### Main mechanics:
+- 6 platforms the player can move across.
+- he character can jump up through platforms from below.
+- It’s only possible to go up; you can’t return to previous platforms.
+- The character starts on floor 0 and must reach floor 6, where the exit door is.
+- Each floor has enemies moving sideways, but only one enemy moves at a time.
+- If the player touches an enemy, they fall back to the starting floor (0).
 
-### Mecánicas principales:
-- 10 bloques con números aleatorios (entre 1 y 999)
-- El jugador debe golpear los bloques **del menor al mayor**
-- Si golpea el correcto: el número cambia de color
-- Si se equivoca: se descuentan 10 segundos del tiempo
-- El juego termina si se golpean todos en orden o se acaba el tiempo
+## ⏱️ Game over conditions
 
-## ⏱️ Condiciones de fin de juego
+- **WIn:** reach the exit before the time runs out.
+- **Lose:** run out of time (30 seconds) before reaching the exit.
 
-- Tiempo llega a 0
-- Todos los bloques golpeados correctamente
+## 📦 Implementation of Stacks & Queues
 
-### Controles:
-- **A / D**: mover al personaje
-- **Espacio / W**: saltar
-- **Shift + A / Shift + D**: correr
+### 🔄 Queues (3 floors)
 
-Al finalizar, se muestran **todos los números ordenados**, y **Game Over** o **You Win**.
+Enemies on three floors use a **queue structure**:
 
-## ⚙️ Tecnologías usadas
+- The first enemy in the queue starts moving.
+- When it reaches the end of the floor, it **goes off screen** and is reinserted **at the end of the queue**.
+- The cycle repeats with the next enemy waiting.
+
+👉 This simulates a **continuous and orderly flow** of enemies.
+
+### 🔁 Stacks (3 other floors)
+
+The other floors use a **stack structure** (Stack A and Stack B):
+
+- The enemy at the **top of Stack A** moves across the floor.
+- When it finishes its path, it’s pushed into **Stack B**.
+- When all enemies are in Stack B, the process **reverses**, moving them back to Stack A.
+
+👉 This creates a **cyclical and controlled flow** of enemies..
+
+
+### Controls
+
+- **A / D**: move
+- **Space / W**: jump
+- **Shift + A / Shift + D**: run
+
+At the end, you’ll see **Game Over** or **You Win**.
+
+## ⚙️ Technologies used
 
 - C++
 - SFML
 - Visual Studio
 
-## 🖼️ Créditos y Licencia de Assets
+## 🖼️ Assets & License
 
-Los recursos gráficos utilizados en este proyecto provienen de:
+Graphics used in this project come from:
 
 - **CHARACTER ANIMATION ASSET PACK**
 - **CITY STREET TILESET PACK**
 
-Estos paquetes fueron creados por **Mucho Pixels**, un estudio especializado en pixel art para videojuegos.
-> El paquete **CHARACTER ANIMATION ASSET PACK** es completamente gratuito y se puede usar en proyectos comerciales, con las siguientes restricciones:
+Created by **Mucho Pixels**, a studio specialized in pixel art for games.
 
-❌ No está permitido redistribuir directamente los archivos.
-❌ No se pueden utilizar como parte de un logotipo o marca registrada.
+> The **CHARACTER ANIMATION ASSET PACK** is completely free to use in commercial projects, with the following restrictions:
+
+❌ You can't redistribute the files directly.  
+❌ You can't use them as part of a logo or registered trademark.
+
+🔗 Official site: [www.muchopixels.com]
 
 
-🔗 Sitio oficial: [www.muchopixels.com]
+## 📦 Download
 
----
-
-## ▶️ Cómo ejecutar
-1. Descargar la carpeta **"Instalador"**.
-2. Dentro encontrarás todos los archivos necesarios y un archivo ejecutable:  
-   **`TP1-Part2-ProgrVJ-I.exe`**
-3. Ejecutá el `.exe` directamente para jugar.
-
-> ⚠️ No borrar ni mover los archivos que acompañan al ejecutable. El juego depende de ellos para funcionar correctamente.
-
----
+[Download on itch.io](https://juliocz36.itch.io/platformer-stacks-queues)
 
 ## 👨‍💻 Autor
 
-**JulioCZ**  
-1° Cuatrimestre – Año 2025  
+JulioCZ
+1° Cuatrimestre – Año 2025
 Tecnicatura en Diseño y Programación de Videojuegos

@@ -58,12 +58,12 @@ Created by **Mucho Pixels**, a studio specialized in pixel art for video games.
 
 ## 📦 Download
 
-[Download on itch.io](https://yourgame.itch.io)
+[Download on itch.io](https://juliocz36.itch.io/blocks-in-order)
 
 ---
 
 ## 👨‍💻 Autor
 
 **JulioCZ**  
-1° Cuatrimestre – Año 2025  
-Tecnicatura en Diseño y Programación de Videojuegos
+1st Semester – 2025
+Technical Degree in Video Game Design and Programming

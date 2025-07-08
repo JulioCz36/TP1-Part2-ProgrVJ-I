@@ -64,6 +64,4 @@ Created by **Mucho Pixels**, a studio specialized in pixel art for video games.
 
 ## 👨‍💻 Autor
 
-**JulioCZ**  
-1st Semester – 2025
-Technical Degree in Video Game Design and Programming
+**JulioCZ** - Technical Degree in Video Game Design and Programming

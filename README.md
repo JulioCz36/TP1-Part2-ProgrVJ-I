@@ -6,7 +6,7 @@ This project was developed as part of **Practical Work Nº 1** for the course, w
 
 ## 🕹️ Gameplay
 
-[![Watch gameplay video](https://img.youtube.com/vi/hfRFodu96G0/0.jpg)](https://www.youtube.com/watch?v=hfRFodu96G0)
+[![Watch gameplay video](https://img.itch.zone/aW1nLzIyMDEwMTA2LnBuZw==/315x250%23c/U6YwXF.png)](https://www.youtube.com/watch?v=hfRFodu96G0)
 
 ## 📝 Objective
 
